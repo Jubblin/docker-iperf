@@ -1,5 +1,8 @@
-FROM alpine:latest
+FROM alpine:3.15.0
 #FROM alpine:3.13.1
+
+ARG TARGETPLATFORM
+RUN echo "I'm building for $TARGETPLATFORM"
 
 LABEL maintainer="Michel Labbe"
 
